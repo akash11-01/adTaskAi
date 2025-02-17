@@ -174,7 +174,6 @@ export default function FirstHeroSection() {
                             <div className="flex flex-col justify-center items-center absolute mt-[120px]">
                                 <img src="Ellipse20.png" alt="" className="w-[12px] h-[12px]" />
                                 <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-100px]" />
-                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-100px]" />
                                 <img src="radarCircle.png" alt="" className="ml-[-51px] mt-[-7px]" />
                             </div>
                         </div>
