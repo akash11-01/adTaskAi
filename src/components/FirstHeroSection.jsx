@@ -2,7 +2,7 @@ import React from 'react'
 import Rect from './Rect'
 import IconGrid from './IconGrids'
 import AnimatedCard from './ShrinkAnimation'
-import AnimatedBars from './ChangeHeight'
+
 
 export default function FirstHeroSection() {
     return (
@@ -158,14 +158,18 @@ export default function FirstHeroSection() {
 
             <div className="w-full flex justify-center">
                 <div className="w-[1120px] h-[597px] mt-24 flex gap-8 justify-between" >
-                    <div className="w-[352px] relative h-[593px] border border-gray-500 rounded-2xl bg-gradient-to-br from-[#0B0B0B] to-[#1D2333] ">
+                    <div className="w-[352px] relative h-[593px] border overflow-hidden border-gray-500 rounded-2xl bg-gradient-to-br from-[#0B0B0B] to-[#1D2333] ">
                         <img src="Ellipse5.png" alt="" className='absolute' />
-                        <div className="flex flex-col items-center justify-center">
+                        <div className="flex flex-col relative items-center justify-center">
+                            <img src="Rectangle5.png" alt="" className='absolute h-[600px] w-[500px] mt-[50px]' />
                             <img src="Ellipse6.png" alt="" className='w-[395.32px] h-[395.32px] mt-[45.34px]  opacity-25 relative' />
-                            <div className="flex flex-col justify-center items-center absolute mt-[120px] animate-spin-slow">
-                                <img src="Ellipse20.png" alt="" className='w-[12px] h-[12px] ' />
-                                <img src="radarCircle.png" alt="" className='ml-[-51px] mt-[-7px] ' />
+                            <div className="flex flex-col justify-center items-center absolute mt-[120px]">
+                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-95px]" />
+                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-95px]" />
+                                <img src="Ellipse20.png" alt="" className="w-[12px] h-[12px]" />
+                                <img src="radarCircle.png" alt="" className="ml-[-51px] mt-[-7px]" />
                             </div>
+
                         </div>
 
                         <h1 className='text-[14px] font-semibold ml-8 mt-12'>Reach Target Audience</h1>
@@ -173,7 +177,7 @@ export default function FirstHeroSection() {
                     </div>
 
                     <div className="flex flex-col gap-[33px]">
-                        <div className="w-[352px] h-[280px] border relative rounded-2xl border-gray-500 bg-gradient-to-br from-[#0B0B0B] to-[#1D2333]">
+                        <div className="w-[352px] h-[280px] border relative rounded-2xl border-gray-500 bg-gradient-to-br from-[#0B0B0B] to-[#1D2333] overflow-hidden">
                             <img src="Ellipse5.png" alt="" className='absolute' />
                             <div className="mx-auto w-[128px] h-[123px] mt-[31px] border rounded-[21px] flex items-center justify-center " >
                                 <div className="w-[112px] h-[107px] border border-transparent bg-[#78819936] rounded-2xl" style={{
@@ -198,20 +202,38 @@ export default function FirstHeroSection() {
                             </div>
                         </div>
 
-                        <div className="w-[352px] h-[280px] border relative border-gray-500 rounded-2xl " style={{ background: "linear-gradient(158.19deg, #0B0B0B 5.17%, #1D2333 98.61%)" }}>
+                        <div className="w-[352px] h-[280px] border relative overflow-hidden border-gray-500 rounded-2xl " style={{ background: "linear-gradient(158.19deg, #0B0B0B 5.17%, #1D2333 98.61%)" }}>
                             <img src="Ellipse5.png" alt="" className='absolute' />
-                            {/* <div className="w-[120px] h-[115px] mt-[38px] ml-[63px] border  rounded-2xl flex bg-[#78819936]" style={{
+                            <div className="w-[120px] h-[115px] mt-[38px] ml-[63px] border  rounded-2xl flex bg-[#78819936]" style={{
                                 borderImageSource:
                                     "linear-gradient(0deg, #000000, #000000), linear-gradient(270deg, #7687B5 0%, #333B4F 100%)",
                                 borderImageSlice: 1,
                             }}>
-                                <img src="Rectangle49.png" alt="" className='w-[14px] h-[91px] ml-[13px] rounded-[14px] mt-[11px]' />
-                                <img src="Rectangle50.png" alt="" className='w-[14px] h-[48px] ml-[13px] rounded-[14px] mt-[54px]' />
-                                <img src="Rectangle51.png" alt="" className='w-[14px] h-[67px]  ml-[13px] rounded-[14px] mt-[35px]' />
-                                <img src="Rectangle52.png" alt="" className='w-[14px] h-[27px] ml-[13px] rounded-[14px] mt-[75px]' />
+                                <div className="flex gap-4 ml-2 items-end mb-2">
+                                    <img
+                                        src="Rectangle49.png"
+                                        alt=""
+                                        className="w-[14px] h-[91px] rounded-[14px] animate-heightChange1"
+                                    />
+                                    <img
+                                        src="Rectangle50.png"
+                                        alt=""
+                                        className="w-[14px] h-[48px] rounded-[14px] animate-heightChange2"
+                                    />
+                                    <img
+                                        src="Rectangle51.png"
+                                        alt=""
+                                        className="w-[14px] h-[67px] rounded-[14px] animate-heightChange3"
+                                    />
+                                    <img
+                                        src="Rectangle52.png"
+                                        alt=""
+                                        className="w-[14px] h-[27px] rounded-[14px] animate-heightChange4"
+                                    />
+                                </div>
 
-                            </div> */}
-                            <AnimatedBars />
+
+                            </div>
                             <div className="w-[102px] h-[102px] ml-[189px] mt-[-105px]">
                                 <img src="Vector(11).png" alt="" className='w-[31.87px] h-[31.88px] mt-[10.62px] ml-[59.5px]' />
                                 <img src="Vector(10).png" alt="" className='w-[84.01px] h-[84.04px] mt-[-33px] ml-[8.64px]' />

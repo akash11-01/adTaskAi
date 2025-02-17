@@ -1,11 +1,12 @@
 export default function AnimatedCard() {
     return (
         <div
-            className="w-[352px] relative h-[597px] border rounded-2xl border-gray-500"
+            className="w-[352px] relative h-[597px] border rounded-2xl overflow-hidden border-gray-500"
             style={{
                 background: "linear-gradient(158.19deg, #0B0B0B 5.17%, #1D2333 98.61%)",
             }}
         >
+            <img src="Rectangle5.png" alt="" className="absolute h-[600px] w-[500px]" />
             <img src="Ellipse5.png" alt="" className="absolute" />
 
             <div className="relative">
