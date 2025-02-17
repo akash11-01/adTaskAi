@@ -7,7 +7,7 @@ export default {
         "infinite-scroll": "infinite-scroll 10s linear infinite",
         rotate: "rotate 7s linear infinite",
         "spin-slow": "spin 5s linear infinite",
-        "text-shadow-fade": "textShadowFade 6s ease-in-out forwards",
+        "text-shadow-fade": "textShadowFade 8s ease-in-out forwards",
       },
       keyframes: {
         "infinite-scroll": {

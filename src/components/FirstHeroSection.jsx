@@ -2,6 +2,10 @@ import React from 'react'
 import Rect from './Rect'
 import IconGrid from './IconGrids'
 import AnimatedCard from './ShrinkAnimation'
+import LeftComp from './LeftComp'
+import UpperMid from './UpperMid'
+import LowerMid from './LowerMid'
+import ServiceContent from './ServiceContent'
 
 
 export default function FirstHeroSection() {
@@ -21,14 +25,14 @@ export default function FirstHeroSection() {
                 <p className='text-[12px] font-medium uppercase'>Transform Your Digital Presence with AI Agents</p>
                 <style>
                     {`
-          @keyframes moveRight {
-            0% { left: 0; }
-            100% { left: 100%; }
-          }
-          .animate-move {
-            animation: moveRight 2s linear infinite;
-          }
-        `}
+                    @keyframes moveRight {
+                        0% { left: 0; }
+                        100% { left: 100%; }
+                    }
+                    .animate-move {
+                        animation: moveRight 2s linear infinite;
+                    }
+                    `}
                 </style>
             </div>
 
@@ -83,7 +87,7 @@ export default function FirstHeroSection() {
             <div className="relative w-full flex justify-center mt-14 px-4 md:px-0">
                 <div className="absolute w-full max-w-[976px] border rounded-[35px] border-transparent h-[586px] mt-[-2px] overflow-hidden">
                     <div className="absolute inset-0 w-full h-full animate-rotate rounded-[40px] bg-[conic-gradient(#0ea5e9_20deg,transparent_120deg)] 
-        mask-image: radial-gradient(circle, transparent 55%, black 60%);"></div>
+                mask-image: radial-gradient(circle, transparent 55%, black 60%);"></div>
                 </div>
                 <div className="bg-[#000000] w-full max-w-[970px] h-[582px] flex border border-purple-500 justify-center items-center rounded-[32px] relative">
                     <img src="AdTask.ai.png" alt="" className="max-w-full h-auto object-contain" />
@@ -93,13 +97,13 @@ export default function FirstHeroSection() {
                 <img src="Ellipse1.png" alt="" className="absolute left-0 mt-[-50px] md:mt-[-100px] w-[80px] md:w-auto" />
 
                 <div className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 flex items-center justify-center 
-    w-[42px] md:w-[52.5px] h-[42px] md:h-[52.5px] bg-[#1E212A] rounded-full 
-    shadow-[0px_0px_5px_2px_#C7D7FF]">
+                w-[42px] md:w-[52.5px] h-[42px] md:h-[52.5px] bg-[#1E212A] rounded-full 
+                shadow-[0px_0px_5px_2px_#C7D7FF]">
                     <img src="Vector_1.png" alt="Chat Icon" className="w-[18px] h-[18px] md:w-[24px] md:h-[23.25px]" />
                     <span className="absolute -top-[4px] -right-[4px] flex h-[14px] w-[14px] md:h-[16.5px] md:w-[16.5px] 
-        items-center justify-center rounded-full bg-red-600 text-white 
-        text-[8px] md:text-[10px] font-bold leading-none 
-        shadow-[0px_0px_3px_1px_#C7D7FF]">
+                    items-center justify-center rounded-full bg-red-600 text-white 
+                    text-[8px] md:text-[10px] font-bold leading-none 
+                    shadow-[0px_0px_3px_1px_#C7D7FF]">
                         1
                     </span>
                 </div>
@@ -161,100 +165,29 @@ export default function FirstHeroSection() {
                 </p>
             </div>
 
-            <div className="w-full flex justify-center">
-                <div className="w-[1120px] h-[597px] mt-24 flex gap-8 justify-between" >
-                    <div className="w-[352px] relative h-[593px] border overflow-hidden border-gray-500 rounded-2xl bg-gradient-to-br from-[#0B0B0B] to-[#1D2333] ">
-                        <img src="Ellipse5.png" alt="" className='absolute' />
-                        <div className="flex flex-col relative items-center justify-center">
-                            <img src="Rectangle5.png" alt="" className='absolute h-[600px] w-[500px] mt-[50px]' />
-                            <img src="Vector(26).png" alt="" className='absolute ml-[-200px] vector-animation1' />
-                            <img src="Vector(26).png" alt="" className='absolute ml-[180px] mt-[-40px] vector-animation2' />
-                            <img src="Vector(26).png" alt="" className='absolute ml-[180px] mt-[250px] vector-animation3' />
-                            <img src="Ellipse6.png" alt="" className='w-[395.32px] h-[395.32px] mt-[45.34px] opacity-25 relative' />
-                            <div className="flex flex-col justify-center items-center absolute mt-[120px]">
-                                <img src="Ellipse20.png" alt="" className="w-[12px] h-[12px]" />
-                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-100px]" />
-                                <img src="radarCircle.png" alt="" className="ml-[-51px] mt-[-7px]" />
-                            </div>
-                        </div>
 
 
-                        <h1 className='text-[14px] font-semibold ml-8 mt-12'>Reach Target Audience</h1>
-                        <p className='text-[12px] font-[300px] ml-8'>Pinpoint the perfect audience with precision. Our<br /> AI-driven targeting ensures every message resonates where it matters most.</p>
+            <div className="w-full flex justify-center px-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-[1120px] mt-24">
+
+                    {/* Left Component */}
+                    <div className="w-full sm:w-[352px] mx-auto">
+                        <LeftComp />
                     </div>
 
-                    <div className="flex flex-col gap-[33px]">
-                        <div className="w-[352px] h-[280px] border relative rounded-2xl border-gray-500 bg-gradient-to-br from-[#0B0B0B] to-[#1D2333] overflow-hidden">
-                            <img src="Ellipse5.png" alt="" className='absolute' />
-                            <div className="mx-auto w-[128px] h-[123px] mt-[31px] border rounded-[21px] flex items-center justify-center " >
-                                <div className="w-[112px] h-[107px] border border-transparent bg-[#78819936] rounded-2xl" style={{
-                                    borderImageSource:
-                                        "linear-gradient(0deg, #000000, #000000), linear-gradient(270deg, #7687B5 0%, #333B4F 100%)",
-                                    borderImageSlice: 1,
-                                }}>
-                                    <img src="Vector(8).png" alt="" className='w-[69px] h-[68px] mt-[9px] ml-[12px] relative animate-spin-slow' />
-                                    <img src="Ellipse8.png" alt="" className='absolute mt-[-70px]' />
-                                    <img src="Vector(9).png" alt="" className='ml-[50px] mt-[-29px] w-[40px] h-[40px] animate-spin-slow ' />
-                                </div>
-                            </div>
-
-                            <div className="mt-[-80px] ml-[226px]">
-                                <p className='uppercase font-[300] text-[10px] ml-[28px]'>Gen AI Powered</p>
-                                <p className='border bg-white  shadow-[0px_0px_4px_0px_#FFFFFF] ml-[3px]'></p>
-                            </div>
-
-                            <div className="ml-8 mt-[80px]">
-                                <p className='text-[14px] font-semibold mb-2'>Marketing made Easier</p>
-                                <p className='text-[12px] font-[300]'>Save time and simplify campaign management.<br /> Let automated workflows handle the heavy<br /> lifting, so you can focus on creativity.</p>
-                            </div>
-                        </div>
-
-                        <div className="w-[352px] h-[280px] border relative overflow-hidden border-gray-500 rounded-2xl " style={{ background: "linear-gradient(158.19deg, #0B0B0B 5.17%, #1D2333 98.61%)" }}>
-                            <img src="Ellipse5.png" alt="" className='absolute' />
-                            <div className="w-[120px] h-[115px] mt-[38px] ml-[63px] border  rounded-2xl flex bg-[#78819936]" style={{
-                                borderImageSource:
-                                    "linear-gradient(0deg, #000000, #000000), linear-gradient(270deg, #7687B5 0%, #333B4F 100%)",
-                                borderImageSlice: 1,
-                            }}>
-                                <div className="flex gap-4 ml-2 items-end mb-2">
-                                    <img
-                                        src="Rectangle49.png"
-                                        alt=""
-                                        className="w-[14px] h-[91px] rounded-[14px] animate-heightChange1"
-                                    />
-                                    <img
-                                        src="Rectangle50.png"
-                                        alt=""
-                                        className="w-[14px] h-[48px] rounded-[14px] animate-heightChange2"
-                                    />
-                                    <img
-                                        src="Rectangle51.png"
-                                        alt=""
-                                        className="w-[14px] h-[67px] rounded-[14px] animate-heightChange3"
-                                    />
-                                    <img
-                                        src="Rectangle52.png"
-                                        alt=""
-                                        className="w-[14px] h-[27px] rounded-[14px] animate-heightChange4"
-                                    />
-                                </div>
-
-
-                            </div>
-                            <div className="w-[102px] h-[102px] ml-[189px] mt-[-105px]">
-                                <img src="Vector(11).png" alt="" className='w-[31.87px] h-[31.88px] mt-[10.62px] ml-[59.5px]' />
-                                <img src="Vector(10).png" alt="" className='w-[84.01px] h-[84.04px] mt-[-33px] ml-[8.64px]' />
-                            </div>
-
-                            <div className="mt-4 ml-[30px]">
-                                <p className='font-semibold text-[14px] mb-2'>Smart Marketing Insights</p>
-                                <p className='font-[300] text-[12px]'>Unlock actionable data to guide every decision.<br /> Stay ahead of trends, refine your strategies, and make confident moves with powerful analytics.</p>
-                            </div>
-                        </div>
+                    {/* Middle Column (Upper & Lower Mid Components) */}
+                    <div className="flex flex-col gap-[33px] mx-auto">
+                        <UpperMid />
+                        <LowerMid />
                     </div>
-                    <AnimatedCard />
+
+                    {/* Animated Card (Hidden on Mobile) */}
+                    <div className="hidden lg:block">
+                        <AnimatedCard />
+                    </div>
                 </div>
             </div>
+
 
             <div className="w-full flex justify-center mt-60" >
                 <button className='rounded-[15px]  font-[500] border-[#FFFFFF0D] text-[12px] w-[96px] h-[34px] uppercase ' style={{
@@ -367,42 +300,8 @@ export default function FirstHeroSection() {
                 </div>
 
 
-                <div className="w-[1080px] h-[597px]  mt-[-9px] relative ml-[36px] flex flex-col gap-3 ">
-                    <div className="flex gap-8">
-                        <div className="w-[338px] h-[292px]  ">
-                            <img src="Vector(13).png" alt="" className='mt-[69px] ml-[138px]' />
-                            <p className='text-[20px] font-[500] text-center mt-9'>Smart Ad Targeting</p>
-                            <p className='font-[300] text-[14px] text-center mt-5'>AI-powered audience segmentation ensures your ads reach the right people, delivering higher ROI and maximum conversion rates.</p>
-                        </div>
-                        <div className="w-[338px] h-[292px]  ">
-                            <img src="Vector(14).png" alt="" className='mt-[69px] ml-[138px]' />
-                            <p className='text-[20px] font-[500] text-center mt-9'>Performance Analytics</p>
-                            <p className='font-[300] text-[14px] text-center mt-5'>Access real-time insights and track key<br /> metrics across all campaigns in one unified<br /> dashboard to quickly refine your strategies.</p>
-                        </div>
-                        <div className="w-[338px] h-[292px]  ">
-                            <img src="MaskGroup.png" alt="" className='mt-[69px] ml-[138px]' />
-                            <p className='text-[20px] font-[500] text-center mt-9'>SEO Automation</p>
-                            <p className='font-[300] text-[14px] text-center mt-5'>Automate keyword research and content optimization suggestions to improve your search engine rankings with less effort.</p>
-                        </div>
-                    </div>
-                    <div className="flex gap-8">
-                        <div className="w-[338px] h-[292px]  ">
-                            <img src="Vector(17).png" alt="" className='mt-[69px] ml-[138px]' />
-                            <p className='text-[20px] font-[500] text-center mt-9'>Social Media Marketing</p>
-                            <p className='font-[300] text-[14px] text-center mt-5'>AI agents craft personalized content, schedule posts, monitor engagement, and refine strategies in real time for maximum impact across all major social platforms.</p>
-                        </div>
-                        <div className="w-[338px] h-[292px]  ">
-                            <img src="Vector(16).png" alt="" className='mt-[69px] ml-[138px]' />
-                            <p className='text-[20px] font-[500] text-center mt-9'>Conversion Optimization</p>
-                            <p className='font-[300] text-[14px] text-center mt-5'>AI-driven A/B testing and automated tweaks<br /> to landing pages and funnels help you<br /> consistently improve conversion rates.</p>
-                        </div>
-                        <div className="w-[338px] h-[292px]  ">
-                            <img src="Vector(15).png" alt="" className='mt-[69px] ml-[138px]' />
-                            <p className='text-[20px] font-[500] text-center mt-9'>Campaign Automation</p>
-                            <p className='font-[300] text-[14px] text-center mt-5'>Centralize and streamline your ad management. Our intelligent engine automatically adjusts bids, budgets, and targeting to maximize results.</p>
-                        </div>
-                    </div>
-                </div>
+
+                <ServiceContent />
             </div>
 
             <div className="w-full flex justify-center mt-28 relative" >
