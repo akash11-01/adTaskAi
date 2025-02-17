@@ -32,16 +32,21 @@ export default function FirstHeroSection() {
                 </style>
             </div>
 
-            <div alt="" className='absolute h-[95.96px] w-[468px] mt-32 flex gap-1 items-end group'  >
-                {["Vector(19).png", "Vector(20).png", "Vector(18).png", "Vector(19).png", "Vector(21).png", "Vector(22).png", "Vector(23).png", "Vector(19).png", "Vector(24).png"].map((src, index) => (
-                    <img
-                        key={index}
-                        src={src}
-                        alt=""
-                        className="w-auto object-cover   h-auto transition-all  duration-300 border-2 border-transparent  group-hover:shadow-lg group-hover:shadow-white transform group-hover:scale-105 group-hover:-translate-y-2 rounded-md"
-                    />
-                ))}
+            <div alt="" className='absolute h-[95.96px] w-[468px] mt-32'  >
+                <div className="flex items-end group">
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>a</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>d</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade'>T</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade ml-[-12px]'>a</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade ml-[-9px]'>s</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade ml-[-9px]'>k</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>.</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>a</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>i</span>
+                </div>
+
             </div>
+
 
             <p className=' absolute w-full text-center mt-72 text-[16px'>
                 Stop struggling with marketing decisions. Our AI assistant analyzes your business, creates <br /> personalized strategies, and helps you execute them - all in real-time.
@@ -104,7 +109,7 @@ export default function FirstHeroSection() {
 
             <div className="overflow-hidden w-full mt-20 relative">
                 <div className="flex items-center animate-infinite-scroll">
-                    {/* Duplicate the images to create a seamless loop */}
+
                     {[...Array(2)].map((_, i) => (
                         <div key={i} className="flex gap-[100px] items-center min-w-full">
                             <img src="Google.png" alt="" className="w-[90px] h-[90px] opacity-[0.34]" />
@@ -162,15 +167,18 @@ export default function FirstHeroSection() {
                         <img src="Ellipse5.png" alt="" className='absolute' />
                         <div className="flex flex-col relative items-center justify-center">
                             <img src="Rectangle5.png" alt="" className='absolute h-[600px] w-[500px] mt-[50px]' />
-                            <img src="Ellipse6.png" alt="" className='w-[395.32px] h-[395.32px] mt-[45.34px]  opacity-25 relative' />
+                            <img src="Vector(26).png" alt="" className='absolute ml-[-200px] vector-animation1' />
+                            <img src="Vector(26).png" alt="" className='absolute ml-[180px] mt-[-40px] vector-animation2' />
+                            <img src="Vector(26).png" alt="" className='absolute ml-[180px] mt-[250px] vector-animation3' />
+                            <img src="Ellipse6.png" alt="" className='w-[395.32px] h-[395.32px] mt-[45.34px] opacity-25 relative' />
                             <div className="flex flex-col justify-center items-center absolute mt-[120px]">
-                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-95px]" />
-                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-95px]" />
                                 <img src="Ellipse20.png" alt="" className="w-[12px] h-[12px]" />
+                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-100px]" />
+                                <img src="Ellipse21.png" alt="" className="absolute animate-ellipse6 mt-[-100px]" />
                                 <img src="radarCircle.png" alt="" className="ml-[-51px] mt-[-7px]" />
                             </div>
-
                         </div>
+
 
                         <h1 className='text-[14px] font-semibold ml-8 mt-12'>Reach Target Audience</h1>
                         <p className='text-[12px] font-[300px] ml-8'>Pinpoint the perfect audience with precision. Our<br /> AI-driven targeting ensures every message resonates where it matters most.</p>
@@ -536,14 +544,17 @@ export default function FirstHeroSection() {
 
             {/* BottomAdTask AI */}
             <div className="w-[468px] h-[96.96px] mt-44 flex gap-1 items-end group">
-                {["Vector(19).png", "Vector(20).png", "Vector(18).png", "Vector(19).png", "Vector(21).png", "Vector(22).png", "Vector(23).png", "Vector(19).png", "Vector(24).png"].map((src, index) => (
-                    <img
-                        key={index}
-                        src={src}
-                        alt=""
-                        className="w-auto h-auto transition-all  duration-300 border-2 border-transparent  group-hover:shadow-lg group-hover:shadow-blue-400 transform group-hover:scale-105 group-hover:-translate-y-2 rounded-md"
-                    />
-                ))}
+                <div className="flex items-end group">
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>a</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>d</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade'>T</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade ml-[-12px]'>a</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade ml-[-9px]'>s</span>
+                    <span className='text-[110px] font-semibold group-hover:animate-text-shadow-fade ml-[-9px]'>k</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>.</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>a</span>
+                    <span className='text-[110px] group-hover:animate-text-shadow-fade'>i</span>
+                </div>
             </div>
 
 

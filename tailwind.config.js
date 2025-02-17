@@ -7,6 +7,7 @@ export default {
         "infinite-scroll": "infinite-scroll 10s linear infinite",
         rotate: "rotate 7s linear infinite",
         "spin-slow": "spin 5s linear infinite",
+        "text-shadow-fade": "textShadowFade 6s ease-in-out forwards",
       },
       keyframes: {
         "infinite-scroll": {
@@ -20,6 +21,17 @@ export default {
         move: {
           "0%": { transform: "translateX(100)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        textShadowFade: {
+          "0%": {
+            textShadow: "0 0 0px white",
+          },
+          "20%": {
+            textShadow: "0 0 15px white",
+          },
+          "100%": {
+            textShadow: "0 0 0px transparent",
+          },
         },
       },
     },
